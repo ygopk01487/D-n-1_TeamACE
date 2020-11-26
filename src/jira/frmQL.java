@@ -6,6 +6,7 @@
 package jira;
 
 import DA1_bll.bll_MatHang;
+import DA1_dto.MatHang;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -1528,7 +1529,7 @@ public class frmQL extends javax.swing.JFrame {
                     .addGroup(pnl_QLLoaiXeLayout.createSequentialGroup()
                         .addGap(57, 57, 57)
                         .addComponent(jLabel5)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
                 .addGroup(pnl_QLLoaiXeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1754,7 +1755,7 @@ public class frmQL extends javax.swing.JFrame {
                     .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(178, Short.MAX_VALUE))
+                .addContainerGap(229, Short.MAX_VALUE))
         );
 
         tblpnl_QuanLy_NV.addTab("QL Màu Xe", pnl_QLMauXe);
@@ -1764,14 +1765,14 @@ public class frmQL extends javax.swing.JFrame {
         tbl_tableNhanVien_Ql3.setForeground(new java.awt.Color(102, 0, 102));
         tbl_tableNhanVien_Ql3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "STT", "Mã Xe", "Tên Xe", "Số lượng", "Nhà sản xuất", "Giá nhập", "Giá bán", "Bảo hành", "Mô tả", "Hình ảnh"
+                "Mã Xe", "Tên Xe", "Số lượng", "Nhà sản xuất", "Giá nhập", "Giá bán", "Bảo hành", "Mô tả", "Hình ảnh"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, true, true, true, true, true
+                false, false, false, false, true, true, true, true, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -1795,12 +1796,10 @@ public class frmQL extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(tbl_tableNhanVien_Ql3);
         if (tbl_tableNhanVien_Ql3.getColumnModel().getColumnCount() > 0) {
-            tbl_tableNhanVien_Ql3.getColumnModel().getColumn(0).setMinWidth(40);
-            tbl_tableNhanVien_Ql3.getColumnModel().getColumn(0).setMaxWidth(40);
-            tbl_tableNhanVien_Ql3.getColumnModel().getColumn(3).setMinWidth(60);
-            tbl_tableNhanVien_Ql3.getColumnModel().getColumn(3).setMaxWidth(60);
-            tbl_tableNhanVien_Ql3.getColumnModel().getColumn(7).setMinWidth(80);
-            tbl_tableNhanVien_Ql3.getColumnModel().getColumn(7).setMaxWidth(80);
+            tbl_tableNhanVien_Ql3.getColumnModel().getColumn(2).setMinWidth(60);
+            tbl_tableNhanVien_Ql3.getColumnModel().getColumn(2).setMaxWidth(60);
+            tbl_tableNhanVien_Ql3.getColumnModel().getColumn(6).setMinWidth(80);
+            tbl_tableNhanVien_Ql3.getColumnModel().getColumn(6).setMaxWidth(80);
         }
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -3402,7 +3401,13 @@ public class frmQL extends javax.swing.JFrame {
     }//GEN-LAST:event_tbl_tableNhanVien_Ql3MouseEntered
 
     private void tbl_tableNhanVien_Ql3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_tableNhanVien_Ql3MouseClicked
-        // TODO add your handling code here:
+        if(evt.getClickCount() >= 2) {
+            int dongDuocChon = tbl_tableNhanVien_Ql3.getSelectedRow();
+            String MaMathang = tbl_tableNhanVien_Ql3.getValueAt(0, dongDuocChon).toString();
+            MatHang mt = bll_MatHang.LoadTheoMa(MaMathang);
+            ma_xe.setText(mt.getMaMatHang() + "");
+            
+        }
     }//GEN-LAST:event_tbl_tableNhanVien_Ql3MouseClicked
 
     private void tbl_tableNhanVien_Ql4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_tableNhanVien_Ql4MouseClicked

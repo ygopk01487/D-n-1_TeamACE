@@ -17,6 +17,11 @@ public class dal_MatHang {
         String sql = "select * from MatHang ";
         return sql_Helper.executeQuery(sql);
     }
+     //load dữ liệu theo mã
+    public static ResultSet LoadTheoMa(String MaMatHang) {
+        String sql = "select * from MatHang where MaMathang = ?";
+        return sql_Helper.executeQuery(sql, MaMatHang);
+    }
     //Thêm
     //Sửa
     //Xóa
