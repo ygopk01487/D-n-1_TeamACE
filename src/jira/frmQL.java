@@ -181,34 +181,30 @@ public class frmQL extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         tbl_tableNhanVien_Ql3 = new javax.swing.JTable();
-        jLabel7 = new javax.swing.JLabel();
-        ma_xe = new javax.swing.JTextField();
+        bllMaMH = new javax.swing.JLabel();
+        txtMaMH = new javax.swing.JTextField();
         anh_xe = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        combo_loai_xe = new javax.swing.JComboBox<>();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        tx_xe5 = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        tx_xe1 = new javax.swing.JTextField();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        com_hang_xe = new javax.swing.JComboBox<>();
-        jLabel15 = new javax.swing.JLabel();
-        combo_mauxe = new javax.swing.JComboBox<>();
-        jLabel16 = new javax.swing.JLabel();
-        tx_xe4 = new javax.swing.JTextField();
-        jLabel21 = new javax.swing.JLabel();
+        lblGiaNhap = new javax.swing.JLabel();
+        lblGiaBan = new javax.swing.JLabel();
+        lblBaoHanh = new javax.swing.JLabel();
+        txtMoTa = new javax.swing.JTextField();
+        lblMoTa = new javax.swing.JLabel();
+        txtTenMH = new javax.swing.JTextField();
+        lblTenMH = new javax.swing.JLabel();
+        bllNhaSX = new javax.swing.JLabel();
+        txtNSX = new javax.swing.JTextField();
+        lblSL = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         chon_file = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        tx_xe3 = new javax.swing.JTextField();
-        jSpinner3 = new javax.swing.JSpinner();
-        jSpinner4 = new javax.swing.JSpinner();
+        txtBH = new javax.swing.JTextField();
+        spGiaNhap = new javax.swing.JSpinner();
+        spSL = new javax.swing.JSpinner();
+        spGiaBan = new javax.swing.JSpinner();
         jPanel15 = new javax.swing.JPanel();
         jLabel42 = new javax.swing.JLabel();
         pnl_nhanvien = new javax.swing.JPanel();
@@ -1510,7 +1506,7 @@ public class frmQL extends javax.swing.JFrame {
                 .addComponent(jLabel17)
                 .addGap(43, 43, 43)
                 .addComponent(ma_loai, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(291, Short.MAX_VALUE))
+                .addContainerGap(288, Short.MAX_VALUE))
         );
         pnl_QLLoaiXeLayout.setVerticalGroup(
             pnl_QLLoaiXeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1614,7 +1610,7 @@ public class frmQL extends javax.swing.JFrame {
                         .addComponent(jLabel35)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ma_hang, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 485, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 483, Short.MAX_VALUE)
                         .addComponent(jLabel33)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ten_hang, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1717,7 +1713,7 @@ public class frmQL extends javax.swing.JFrame {
             .addGroup(pnl_QLMauXeLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(pnl_QLMauXeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 1137, Short.MAX_VALUE)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 1139, Short.MAX_VALUE)
                     .addGroup(pnl_QLMauXeLayout.createSequentialGroup()
                         .addGroup(pnl_QLMauXeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnl_QLMauXeLayout.createSequentialGroup()
@@ -1802,46 +1798,46 @@ public class frmQL extends javax.swing.JFrame {
             tbl_tableNhanVien_Ql3.getColumnModel().getColumn(6).setMaxWidth(80);
         }
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel7.setText("Mã Xe:");
+        bllMaMH.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        bllMaMH.setText("Mã Xe:");
 
         anh_xe.setText(".");
 
         jLabel14.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel14.setText("Ảnh Sản Phẩm");
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel9.setText("Giá:");
+        lblGiaNhap.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblGiaNhap.setText("Giá nhập:");
 
-        jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel10.setText("Loại Xe:");
+        lblGiaBan.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblGiaBan.setText("GIá bán: ");
 
-        jLabel11.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel11.setText("Số Khung:");
+        lblBaoHanh.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblBaoHanh.setText("Bảo hành: ");
 
-        jLabel13.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel13.setText("Dung Tích:");
+        lblMoTa.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblMoTa.setText("Mô tả: ");
 
-        jLabel20.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel20.setText("Tên Xe Máy:");
+        lblTenMH.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblTenMH.setText("Tên MH:");
 
-        jLabel12.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel12.setText("Hãng Xe:");
+        bllNhaSX.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        bllNhaSX.setText("Nhà SX: ");
 
-        jLabel15.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel15.setText("Màu Xe:");
+        txtNSX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNSXActionPerformed(evt);
+            }
+        });
 
-        jLabel16.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel16.setText("Số Máy:");
-
-        jLabel21.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel21.setText("Số Lượng:");
+        lblSL.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblSL.setText("Số Lượng:");
 
         jLabel22.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel22.setText("Chiếc");
 
         jLabel18.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel18.setText("Ảnh Xe:");
+        jLabel18.setText("HÌnh ảnh");
 
         chon_file.setBackground(new java.awt.Color(204, 255, 204));
         chon_file.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -1885,59 +1881,53 @@ public class frmQL extends javax.swing.JFrame {
                             .addGroup(jPanel5Layout.createSequentialGroup()
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel5Layout.createSequentialGroup()
+                                        .addGap(22, 22, 22)
+                                        .addComponent(bllMaMH)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtMaMH, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel5Layout.createSequentialGroup()
+                                        .addGap(21, 21, 21)
                                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                                .addGap(10, 10, 10)
-                                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel12)
-                                                    .addComponent(jLabel15)
-                                                    .addComponent(jLabel16))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                                                .addComponent(jLabel20)
-                                                .addGap(2, 2, 2)))
-                                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(combo_mauxe, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(com_hang_xe, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(tx_xe1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(tx_xe4, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addGap(22, 22, 22)
-                                        .addComponent(jLabel7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(ma_xe, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(bllNhaSX)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(txtNSX, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addComponent(lblTenMH)
+                                                .addGap(2, 2, 2)
+                                                .addComponent(txtTenMH, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel5Layout.createSequentialGroup()
                                         .addGap(47, 47, 47)
-                                        .addComponent(jLabel21)
+                                        .addComponent(lblSL)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(spSL, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(jLabel22)
                                         .addGap(0, 0, Short.MAX_VALUE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, Short.MAX_VALUE)
                                         .addComponent(anh_xe, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel5Layout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE)
                                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel11)
-                                            .addComponent(jLabel9)
-                                            .addComponent(jLabel10))
+                                            .addComponent(lblBaoHanh)
+                                            .addComponent(lblGiaNhap)
+                                            .addComponent(lblGiaBan))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(combo_loai_xe, 0, 274, Short.MAX_VALUE)
-                                            .addComponent(tx_xe3, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE)
-                                            .addComponent(jSpinner3)))
+                                            .addComponent(txtBH, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE)
+                                            .addComponent(spGiaNhap)
+                                            .addComponent(spGiaBan)))
                                     .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(jLabel18)
-                                            .addComponent(jLabel13))
+                                            .addComponent(lblMoTa))
                                         .addGap(10, 10, 10)
                                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(tx_xe5, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtMoTa, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(chon_file))))))
                         .addContainerGap())))
             .addGroup(jPanel5Layout.createSequentialGroup()
@@ -1957,14 +1947,12 @@ public class frmQL extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
-                                .addGap(76, 76, 76)
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(combo_loai_xe, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel10))
+                                .addGap(85, 85, 85)
+                                .addComponent(lblGiaBan)
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel11)
-                                    .addComponent(tx_xe3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(lblBaoHanh)
+                                    .addComponent(txtBH, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel5Layout.createSequentialGroup()
                                 .addComponent(jLabel14)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1973,8 +1961,8 @@ public class frmQL extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(tx_xe5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel13))
+                                .addComponent(txtMoTa, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblMoTa))
                             .addGroup(jPanel5Layout.createSequentialGroup()
                                 .addGap(44, 44, 44)
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1985,33 +1973,28 @@ public class frmQL extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel7)
-                                    .addComponent(ma_xe, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(bllMaMH)
+                                    .addComponent(txtMaMH, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(14, 14, 14)
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(tx_xe1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel20))
+                                    .addComponent(txtTenMH, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblTenMH))
                                 .addGap(18, 18, 18)
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(com_hang_xe, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel12))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(combo_mauxe, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel15))
-                                .addGap(14, 14, 14))
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(bllNhaSX)
+                                    .addComponent(txtNSX, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel5Layout.createSequentialGroup()
                                 .addGap(28, 28, 28)
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel9)
-                                    .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(153, 153, 153)))
+                                    .addComponent(lblGiaNhap)
+                                    .addComponent(spGiaNhap, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addComponent(spGiaBan, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(tx_xe4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel21)
+                            .addComponent(lblSL)
                             .addComponent(jLabel22)
-                            .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(spSL, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3405,7 +3388,7 @@ public class frmQL extends javax.swing.JFrame {
             int dongDuocChon = tbl_tableNhanVien_Ql3.getSelectedRow();
             String MaMathang = tbl_tableNhanVien_Ql3.getValueAt(0, dongDuocChon).toString();
             MatHang mt = bll_MatHang.LoadTheoMa(MaMathang);
-            ma_xe.setText(mt.getMaMatHang() + "");
+            txtMaMH.setText(mt.getMaMatHang() + "");
             
         }
     }//GEN-LAST:event_tbl_tableNhanVien_Ql3MouseClicked
@@ -3550,6 +3533,10 @@ public class frmQL extends javax.swing.JFrame {
         bll_MatHang.LoadAll(tbl_tableNhanVien_Ql3);
     }//GEN-LAST:event_formWindowOpened
 
+    private void txtNSXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNSXActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNSXActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -3562,6 +3549,8 @@ public class frmQL extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel anh_xe;
     private javax.swing.JLabel anh_xe1;
+    private javax.swing.JLabel bllMaMH;
+    private javax.swing.JLabel bllNhaSX;
     private javax.swing.JPanel btn_BaoHanh_Menu;
     private javax.swing.JPanel btn_HoaDon_Menu;
     private javax.swing.JPanel btn_KhachHang_Menu;
@@ -3573,7 +3562,6 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JPanel btn_xemay_menu;
     private javax.swing.JButton chon_file;
     private javax.swing.JButton chon_file1;
-    private javax.swing.JComboBox<String> com_hang_xe;
     private javax.swing.JComboBox<String> combo;
     private javax.swing.JComboBox<String> combo1;
     private javax.swing.JComboBox<String> combo2;
@@ -3581,28 +3569,18 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> combo_ct;
     private javax.swing.JComboBox<String> combo_dh1;
     private javax.swing.JComboBox<String> combo_dh2;
-    private javax.swing.JComboBox<String> combo_loai_xe;
-    private javax.swing.JComboBox<String> combo_mauxe;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel102;
     private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel104;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -3655,7 +3633,6 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
@@ -3677,7 +3654,6 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
@@ -3719,8 +3695,6 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner2;
-    private javax.swing.JSpinner jSpinner3;
-    private javax.swing.JSpinner jSpinner4;
     private javax.swing.JSpinner jSpinner5;
     private javax.swing.JSpinner jSpinner6;
     private javax.swing.JTextField jTextField1;
@@ -3731,9 +3705,15 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JLabel jlable5;
     private javax.swing.JLabel jlable6;
     private javax.swing.JLabel jlable7;
+    private javax.swing.JLabel lblBaoHanh;
+    private javax.swing.JLabel lblGiaBan;
+    private javax.swing.JLabel lblGiaNhap;
+    private javax.swing.JLabel lblMoTa;
+    private javax.swing.JLabel lblSL;
     private javax.swing.JLabel lblSQLTongSoKhachHangCuaNgay;
     private javax.swing.JLabel lblSoHoaDonTheoNgay;
     private javax.swing.JLabel lblSoSPTheoNgay;
+    private javax.swing.JLabel lblTenMH;
     private javax.swing.JLabel lblThanhTien;
     private javax.swing.JLabel lblThanhTien1;
     private javax.swing.JLabel lblTongTienHDTheoNgay;
@@ -3770,7 +3750,6 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JTextField ma_hd_ct;
     private javax.swing.JTextField ma_loai;
     private javax.swing.JTextField ma_mau;
-    private javax.swing.JTextField ma_xe;
     private javax.swing.JTextField makh;
     private javax.swing.JTextField manv;
     private com.toedter.calendar.JDateChooser ngayhethan;
@@ -3801,6 +3780,9 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JPanel pnl_nhapxuat;
     private javax.swing.JPanel pnl_tinhtienChar;
     private javax.swing.JPanel pnl_tinhtienCharNgay;
+    private javax.swing.JSpinner spGiaBan;
+    private javax.swing.JSpinner spGiaNhap;
+    private javax.swing.JSpinner spSL;
     private javax.swing.JTable tblMauXe;
     private javax.swing.JLabel tbl_addHoadDon1;
     private javax.swing.JLabel tbl_addHoadDon2;
@@ -3833,10 +3815,11 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JTextField tx_dh_1;
     private javax.swing.JTextArea tx_hang2;
     private javax.swing.JTextField tx_ma_ct;
-    private javax.swing.JTextField tx_xe1;
-    private javax.swing.JTextField tx_xe3;
-    private javax.swing.JTextField tx_xe4;
-    private javax.swing.JTextField tx_xe5;
+    private javax.swing.JTextField txtBH;
+    private javax.swing.JTextField txtMaMH;
+    private javax.swing.JTextField txtMoTa;
+    private javax.swing.JTextField txtNSX;
+    private javax.swing.JTextField txtTenMH;
     private javax.swing.JButton xuathoadon;
     // End of variables declaration//GEN-END:variables
 }

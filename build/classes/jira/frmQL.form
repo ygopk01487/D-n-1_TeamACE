@@ -2181,7 +2181,7 @@
                               <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                               <Component id="ma_loai" min="-2" pref="250" max="-2" attributes="0"/>
-                              <EmptySpace pref="291" max="32767" attributes="0"/>
+                              <EmptySpace pref="288" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -2408,7 +2408,7 @@
                                       <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="ma_hang" min="-2" pref="250" max="-2" attributes="0"/>
-                                      <EmptySpace pref="485" max="32767" attributes="0"/>
+                                      <EmptySpace pref="483" max="32767" attributes="0"/>
                                       <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="ten_hang" min="-2" pref="250" max="-2" attributes="0"/>
@@ -2666,7 +2666,7 @@
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jScrollPane5" alignment="0" pref="1137" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane5" alignment="0" pref="1139" max="32767" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
@@ -2852,47 +2852,39 @@
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Group type="102" alignment="0" attributes="0">
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Group type="102" alignment="0" attributes="0">
-                                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                                  <Component id="jLabel12" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                                  <Component id="jLabel15" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                                  <Component id="jLabel16" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                              </Group>
-                                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          </Group>
-                                                          <Group type="102" alignment="1" attributes="0">
-                                                              <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                                                          </Group>
-                                                      </Group>
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="combo_mauxe" alignment="0" min="-2" pref="250" max="-2" attributes="0"/>
-                                                          <Component id="com_hang_xe" alignment="0" min="-2" pref="250" max="-2" attributes="0"/>
-                                                          <Component id="tx_xe1" alignment="0" min="-2" pref="250" max="-2" attributes="0"/>
-                                                          <Component id="tx_xe4" alignment="0" min="-2" pref="250" max="-2" attributes="0"/>
-                                                      </Group>
+                                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                                      <Component id="bllMaMH" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                      <Component id="txtMaMH" min="-2" pref="249" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="0" attributes="0">
-                                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="ma_xe" min="-2" pref="249" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Group type="102" attributes="0">
+                                                              <Component id="bllNhaSX" min="-2" max="-2" attributes="0"/>
+                                                              <EmptySpace max="-2" attributes="0"/>
+                                                              <Component id="txtNSX" min="-2" pref="250" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <Group type="102" attributes="0">
+                                                              <Component id="lblTenMH" min="-2" max="-2" attributes="0"/>
+                                                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                                              <Component id="txtTenMH" min="-2" pref="250" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
                                                   </Group>
                                               </Group>
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Group type="102" attributes="0">
                                                       <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                                                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lblSL" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jSpinner4" min="-2" pref="102" max="-2" attributes="0"/>
+                                                      <Component id="spSL" min="-2" pref="102" max="-2" attributes="0"/>
                                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                                       <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="1" attributes="0">
-                                                      <EmptySpace max="32767" attributes="0"/>
+                                                      <EmptySpace pref="142" max="32767" attributes="0"/>
                                                       <Component id="anh_xe" min="-2" pref="330" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
@@ -2900,26 +2892,26 @@
                                                   <Group type="102" attributes="0">
                                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                                       <Group type="103" groupAlignment="1" attributes="0">
-                                                          <Component id="jLabel11" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="jLabel9" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="jLabel10" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="lblBaoHanh" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="lblGiaNhap" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="lblGiaBan" alignment="1" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="combo_loai_xe" alignment="0" pref="274" max="32767" attributes="0"/>
-                                                          <Component id="tx_xe3" alignment="0" pref="274" max="32767" attributes="0"/>
-                                                          <Component id="jSpinner3" max="32767" attributes="0"/>
+                                                          <Component id="txtBH" alignment="0" pref="274" max="32767" attributes="0"/>
+                                                          <Component id="spGiaNhap" max="32767" attributes="0"/>
+                                                          <Component id="spGiaBan" alignment="0" max="32767" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                                   <Group type="102" attributes="0">
-                                                      <EmptySpace max="32767" attributes="0"/>
+                                                      <EmptySpace pref="10" max="32767" attributes="0"/>
                                                       <Group type="103" groupAlignment="1" attributes="0">
                                                           <Component id="jLabel18" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="jLabel13" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="lblMoTa" alignment="1" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="tx_xe5" alignment="0" min="-2" pref="274" max="-2" attributes="0"/>
+                                                          <Component id="txtMoTa" alignment="0" min="-2" pref="274" max="-2" attributes="0"/>
                                                           <Component id="chon_file" alignment="0" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
@@ -2949,15 +2941,12 @@
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="combo_loai_xe" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                                                  <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              </Group>
+                                              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+                                              <Component id="lblGiaBan" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="tx_xe3" min="-2" pref="32" max="-2" attributes="0"/>
+                                                  <Component id="lblBaoHanh" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="txtBH" min="-2" pref="32" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
@@ -2970,8 +2959,8 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                              <Component id="tx_xe5" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                                              <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMoTa" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                                              <Component id="lblMoTa" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace min="44" pref="44" max="-2" attributes="0"/>
@@ -2987,41 +2976,35 @@
                                           <Group type="102" alignment="1" attributes="0">
                                               <EmptySpace pref="24" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="ma_xe" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                                                  <Component id="bllMaMH" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="txtMaMH" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="tx_xe1" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                                                  <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="txtTenMH" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                                                  <Component id="lblTenMH" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="com_hang_xe" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                                                  <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="bllNhaSX" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="txtNSX" min="-2" pref="32" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="combo_mauxe" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                                                  <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jSpinner3" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                                                  <Component id="lblGiaNhap" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="spGiaNhap" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="spGiaBan" min="-2" pref="28" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="tx_xe4" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                                          <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblSL" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jSpinner4" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                                          <Component id="spSL" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -3139,7 +3122,7 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Component class="javax.swing.JLabel" name="jLabel7">
+                    <Component class="javax.swing.JLabel" name="bllMaMH">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Arial" size="12" style="1"/>
@@ -3147,7 +3130,7 @@
                         <Property name="text" type="java.lang.String" value="M&#xe3; Xe:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="ma_xe">
+                    <Component class="javax.swing.JTextField" name="txtMaMH">
                     </Component>
                     <Component class="javax.swing.JLabel" name="anh_xe">
                       <Properties>
@@ -3162,107 +3145,64 @@
                         <Property name="text" type="java.lang.String" value="&#x1ea2;nh S&#x1ea3;n Ph&#x1ea9;m"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel9">
+                    <Component class="javax.swing.JLabel" name="lblGiaNhap">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Arial" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Gi&#xe1;:"/>
+                        <Property name="text" type="java.lang.String" value="Gi&#xe1; nh&#x1ead;p:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="combo_loai_xe">
-                      <Properties>
-                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="0"/>
-                        </Property>
-                      </Properties>
-                      <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                      </AuxValues>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel10">
+                    <Component class="javax.swing.JLabel" name="lblGiaBan">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Arial" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Lo&#x1ea1;i Xe:"/>
+                        <Property name="text" type="java.lang.String" value="GI&#xe1; b&#xe1;n: "/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel11">
+                    <Component class="javax.swing.JLabel" name="lblBaoHanh">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Arial" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="S&#x1ed1; Khung:"/>
+                        <Property name="text" type="java.lang.String" value="B&#x1ea3;o h&#xe0;nh: "/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="tx_xe5">
+                    <Component class="javax.swing.JTextField" name="txtMoTa">
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel13">
+                    <Component class="javax.swing.JLabel" name="lblMoTa">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Arial" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Dung T&#xed;ch:"/>
+                        <Property name="text" type="java.lang.String" value="M&#xf4; t&#x1ea3;: "/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="tx_xe1">
+                    <Component class="javax.swing.JTextField" name="txtTenMH">
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel20">
+                    <Component class="javax.swing.JLabel" name="lblTenMH">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Arial" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="T&#xea;n Xe M&#xe1;y:"/>
+                        <Property name="text" type="java.lang.String" value="T&#xea;n MH:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel12">
+                    <Component class="javax.swing.JLabel" name="bllNhaSX">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Arial" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="H&#xe3;ng Xe:"/>
+                        <Property name="text" type="java.lang.String" value="Nh&#xe0; SX: "/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="com_hang_xe">
-                      <Properties>
-                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="0"/>
-                        </Property>
-                      </Properties>
-                      <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                      </AuxValues>
+                    <Component class="javax.swing.JTextField" name="txtNSX">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNSXActionPerformed"/>
+                      </Events>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel15">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Arial" size="12" style="1"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="M&#xe0;u Xe:"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JComboBox" name="combo_mauxe">
-                      <Properties>
-                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="0"/>
-                        </Property>
-                      </Properties>
-                      <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                      </AuxValues>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel16">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Arial" size="12" style="1"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="S&#x1ed1; M&#xe1;y:"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JTextField" name="tx_xe4">
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel21">
+                    <Component class="javax.swing.JLabel" name="lblSL">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Arial" size="12" style="1"/>
@@ -3283,7 +3223,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Arial" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="&#x1ea2;nh Xe:"/>
+                        <Property name="text" type="java.lang.String" value="H&#xcc;nh &#x1ea3;nh"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JButton" name="chon_file">
@@ -3354,11 +3294,13 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="tx_xe3">
+                    <Component class="javax.swing.JTextField" name="txtBH">
                     </Component>
-                    <Component class="javax.swing.JSpinner" name="jSpinner3">
+                    <Component class="javax.swing.JSpinner" name="spGiaNhap">
                     </Component>
-                    <Component class="javax.swing.JSpinner" name="jSpinner4">
+                    <Component class="javax.swing.JSpinner" name="spSL">
+                    </Component>
+                    <Component class="javax.swing.JSpinner" name="spGiaBan">
                     </Component>
                   </SubComponents>
                 </Container>
