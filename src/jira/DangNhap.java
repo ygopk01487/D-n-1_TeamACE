@@ -44,8 +44,8 @@ public class DangNhap extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        txt_username = new javax.swing.JTextField();
-        pw_pass = new javax.swing.JPasswordField();
+        txtTenDangNhap = new javax.swing.JTextField();
+        txtMatKhau = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -57,7 +57,6 @@ public class DangNhap extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\TRINH THE NAM\\Desktop\\JW-Còoeee\\JIRA\\JIRA\\src\\icon\\motorbike (1).png")); // NOI18N
         jLabel1.setToolTipText("");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 170, 190));
 
@@ -104,18 +103,17 @@ public class DangNhap extends javax.swing.JFrame {
         });
 
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setIcon(new javax.swing.ImageIcon("C:\\Users\\TRINH THE NAM\\Desktop\\JW-Còoeee\\JIRA\\JIRA\\src\\icon\\icons8_Closed_Eye_30px.png")); // NOI18N
 
-        txt_username.setBackground(new java.awt.Color(0, 0, 0));
-        txt_username.setForeground(new java.awt.Color(255, 255, 255));
-        txt_username.setBorder(null);
+        txtTenDangNhap.setBackground(new java.awt.Color(0, 0, 0));
+        txtTenDangNhap.setForeground(new java.awt.Color(255, 255, 255));
+        txtTenDangNhap.setBorder(null);
 
-        pw_pass.setBackground(new java.awt.Color(0, 0, 0));
-        pw_pass.setForeground(new java.awt.Color(255, 255, 255));
-        pw_pass.setBorder(null);
-        pw_pass.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtMatKhau.setBackground(new java.awt.Color(0, 0, 0));
+        txtMatKhau.setForeground(new java.awt.Color(255, 255, 255));
+        txtMatKhau.setBorder(null);
+        txtMatKhau.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                pw_passKeyPressed(evt);
+                txtMatKhauKeyPressed(evt);
             }
         });
 
@@ -135,7 +133,7 @@ public class DangNhap extends javax.swing.JFrame {
                                     .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(pw_pass, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtMatKhau, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jLabel19)))
                                 .addGap(0, 0, Short.MAX_VALUE))))
@@ -152,7 +150,7 @@ public class DangNhap extends javax.swing.JFrame {
                                 .addGap(35, 35, 35)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel15)
-                                    .addComponent(txt_username, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(txtTenDangNhap, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(38, 38, 38))
         );
@@ -164,7 +162,7 @@ public class DangNhap extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addComponent(jLabel15)
                 .addGap(8, 8, 8)
-                .addComponent(txt_username, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtTenDangNhap, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -172,7 +170,7 @@ public class DangNhap extends javax.swing.JFrame {
                 .addGap(4, 4, 4)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel19)
-                    .addComponent(pw_pass, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtMatKhau, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -211,10 +209,16 @@ public class DangNhap extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowOpened
 
     private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
-        // TODO add your handling code here:
-        frmQL QL = new frmQL();
-        QL.setVisible(true);
-        this.setVisible(false);
+
+        String TenDangNhap = txtTenDangNhap.getText();
+        String MatKhau = String.valueOf(txtMatKhau.getPassword());
+        if (TenDangNhap.equals("admin") && MatKhau.equals("admin")) {
+            frmQL QL = new frmQL();
+            QL.setVisible(true);
+            this.setVisible(false);
+        } else {
+            System.out.println("Đăng nhập thất bại");
+        }
     }//GEN-LAST:event_jLabel17MouseClicked
 
     private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
@@ -223,10 +227,10 @@ public class DangNhap extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jLabel18MouseClicked
 
-    private void pw_passKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pw_passKeyPressed
+    private void txtMatKhauKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtMatKhauKeyPressed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_pw_passKeyPressed
+    }//GEN-LAST:event_txtMatKhauKeyPressed
 
     /**
      * @param args the command line arguments
@@ -275,7 +279,7 @@ public class DangNhap extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JPanel pnl_backgrounmd;
-    private javax.swing.JPasswordField pw_pass;
-    private javax.swing.JTextField txt_username;
+    private javax.swing.JPasswordField txtMatKhau;
+    private javax.swing.JTextField txtTenDangNhap;
     // End of variables declaration//GEN-END:variables
 }

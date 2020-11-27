@@ -34,9 +34,6 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\TRINH THE NAM\Desktop\JW-C&#xf2;oeee\JIRA\JIRA\src\icon\motorbike (1).png"/>
-        </Property>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Constraints>
@@ -100,7 +97,7 @@
                                           <Component id="jSeparator9" min="-2" pref="326" max="-2" attributes="0"/>
                                           <Component id="jLabel17" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="pw_pass" min="-2" pref="286" max="-2" attributes="0"/>
+                                              <Component id="txtMatKhau" min="-2" pref="286" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                               <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
                                           </Group>
@@ -124,7 +121,7 @@
                                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                                          <Component id="txt_username" min="-2" pref="326" max="-2" attributes="0"/>
+                                          <Component id="txtTenDangNhap" min="-2" pref="326" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -143,7 +140,7 @@
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                       <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                      <Component id="txt_username" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="txtTenDangNhap" min="-2" pref="25" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jSeparator9" min="-2" pref="10" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -151,7 +148,7 @@
                       <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                          <Component id="pw_pass" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="txtMatKhau" min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jSeparator10" min="-2" pref="13" max="-2" attributes="0"/>
@@ -260,12 +257,9 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\TRINH THE NAM\Desktop\JW-C&#xf2;oeee\JIRA\JIRA\src\icon\icons8_Closed_Eye_30px.png"/>
-                </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txt_username">
+            <Component class="javax.swing.JTextField" name="txtTenDangNhap">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
@@ -278,7 +272,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JPasswordField" name="pw_pass">
+            <Component class="javax.swing.JPasswordField" name="txtMatKhau">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
@@ -291,7 +285,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="pw_passKeyPressed"/>
+                <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtMatKhauKeyPressed"/>
               </Events>
             </Component>
           </SubComponents>
