@@ -14,6 +14,10 @@ import javax.swing.ImageIcon;
 import java.time.chrono.JapaneseDate;
 import java.util.Calendar;
 import javax.swing.BorderFactory;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 //        com.toedter.calendar.JDateChooser tx_dh_2;
 /**
@@ -3372,7 +3376,25 @@ public class frmQL extends javax.swing.JFrame {
     }//GEN-LAST:event_tbl_tableNhanVien_QlMouseClicked
 
     private void chon_fileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chon_fileActionPerformed
-        // TODO add your handling code here:
+//        JFileChooser fileChooser = new JFileChooser("image");
+//        FileFilter filter = new FileNameExtensionFilter("Image file", "gjf", "jpg", "png");
+//
+//        fileChooser.setFileFilter(filter);
+//        fileChooser.setMultiSelectionEnabled(false);
+//
+//        int action = fileChooser.showOpenDialog(this);
+//        if (action == JFileChooser.APPROVE_OPTION) {
+//            while (true) {
+//                if (!fileChooser.getSelectedFile().getName().matches("([^\\s]+(\\.(?i)(jpg|png|gif|bmp))$)")) {
+//                    JOptionPane.showMessageDialog(null, "Định dạng file hình đuôi phải là GIF, JPG, PNG !");
+//                    return;
+//                } else {
+//                    break;
+//                }
+//            }
+//            String imgFile = fileChooser.getSelectedFile().getName();
+//            txtDuongDan.setText(imgFile);
+//            img.setImageLabel(lblHinhAnh, "image//" + imgFile);
     }//GEN-LAST:event_chon_fileActionPerformed
 
     private void tbl_tableNhanVien_Ql3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_tableNhanVien_Ql3MouseEntered

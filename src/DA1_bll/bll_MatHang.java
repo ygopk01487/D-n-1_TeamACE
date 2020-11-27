@@ -10,6 +10,7 @@ import DA1_dal.dal_MatHang;
 import DA1_dto.MatHang;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTable;
@@ -65,5 +66,24 @@ public class bll_MatHang {
             Logger.getLogger("Thông báo", "Lỗi load dữ liệu từ Database");
         }
         return null;
+    }
+    //Hàm kiểm tra
+    //Thêm
+    public static void Them(MatHang mh) {
+        //Hàm kiể tra
+        //Hàm từ dal
+        dal_MatHang.Them(mh);
+    }
+    //Sửa
+    public static void Sua(MatHang mh) {
+        //Hàm kiể tra
+        //Hàm từ dal
+        dal_MatHang.Sua(mh);
+    }
+    //Xóa
+    public static void Them(List<String> lstMaMatHang) {
+        for (String MaMH: lstMaMatHang) {
+            dal_MatHang.Xoa(MaMH);
+        }
     }
 }
