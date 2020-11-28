@@ -81,7 +81,7 @@ public class bll_MatHang {
         dal_MatHang.Sua(mh);
     }
     //Xóa
-    public static void Them(List<String> lstMaMatHang) {
+    public static void Xoa(List<String> lstMaMatHang) {
         for (String MaMH: lstMaMatHang) {
             dal_MatHang.Xoa(MaMH);
         }

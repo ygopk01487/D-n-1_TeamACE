@@ -216,13 +216,14 @@ public class frmQL extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         chon_file = new javax.swing.JButton();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
+        btn_THem = new javax.swing.JLabel();
+        btn_Sua = new javax.swing.JLabel();
+        btn_Xoa = new javax.swing.JLabel();
         txtBH = new javax.swing.JTextField();
         spGiaNhap = new javax.swing.JSpinner();
         spSL = new javax.swing.JSpinner();
         spGiaBan = new javax.swing.JSpinner();
+        txtDuong_Dan = new javax.swing.JButton();
         jPanel15 = new javax.swing.JPanel();
         jLabel42 = new javax.swing.JLabel();
         pnl_khachhang = new javax.swing.JPanel();
@@ -507,7 +508,7 @@ public class frmQL extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(btn_NhanVien_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(btn_NhanVien_MenuLayout.createSequentialGroup()
-                        .addComponent(lbl_home3, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
+                        .addComponent(lbl_home3, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
                         .addContainerGap())
                     .addComponent(lbl_iconmain3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
@@ -549,7 +550,7 @@ public class frmQL extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(btn_KhachHang_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lbl_iconmain4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lbl_home4, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE))
+                    .addComponent(lbl_home4, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -589,7 +590,7 @@ public class frmQL extends javax.swing.JFrame {
             .addGroup(btn_NhapXuat_MenuLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(btn_NhapXuat_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(lbl_home5, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
+                    .addComponent(lbl_home5, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
                     .addComponent(lbl_iconmain5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -631,7 +632,7 @@ public class frmQL extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addGroup(btn_BaoHanh_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(btn_BaoHanh_MenuLayout.createSequentialGroup()
-                        .addComponent(lbl_home6, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                        .addComponent(lbl_home6, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
                         .addContainerGap())
                     .addComponent(lbl_iconmain6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
@@ -673,7 +674,7 @@ public class frmQL extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addGroup(btn_ThongKe_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(btn_ThongKe_MenuLayout.createSequentialGroup()
-                        .addComponent(lbl_home7, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                        .addComponent(lbl_home7, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
                         .addContainerGap())
                     .addComponent(lbl_iconmain7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
@@ -1868,20 +1869,44 @@ public class frmQL extends javax.swing.JFrame {
             }
         });
 
-        jLabel19.setBackground(new java.awt.Color(237, 237, 237));
-        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel19.setText("Thêm ");
-        jLabel19.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        btn_THem.setBackground(new java.awt.Color(237, 237, 237));
+        btn_THem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btn_THem.setText("Thêm ");
+        btn_THem.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        btn_THem.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_THemMouseClicked(evt);
+            }
+        });
 
-        jLabel24.setBackground(new java.awt.Color(237, 237, 237));
-        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24.setText("Sửa");
-        jLabel24.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        btn_Sua.setBackground(new java.awt.Color(237, 237, 237));
+        btn_Sua.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btn_Sua.setText("Sửa");
+        btn_Sua.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        btn_Sua.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_SuaMouseClicked(evt);
+            }
+        });
 
-        jLabel25.setBackground(new java.awt.Color(237, 237, 237));
-        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel25.setText("Xóa");
-        jLabel25.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        btn_Xoa.setBackground(new java.awt.Color(237, 237, 237));
+        btn_Xoa.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btn_Xoa.setText("Xóa");
+        btn_Xoa.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        btn_Xoa.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_XoaMouseClicked(evt);
+            }
+        });
+
+        txtDuong_Dan.setBackground(new java.awt.Color(204, 255, 204));
+        txtDuong_Dan.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txtDuong_Dan.setForeground(new java.awt.Color(255, 51, 0));
+        txtDuong_Dan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDuong_DanActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -1922,7 +1947,11 @@ public class frmQL extends javax.swing.JFrame {
                                                 .addComponent(spSL, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
                                 .addComponent(lblHinhAnh, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(67, 67, 67)))
+                                .addGap(67, 67, 67))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(txtDuong_Dan, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)))
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel5Layout.createSequentialGroup()
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1948,11 +1977,11 @@ public class frmQL extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel22)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn_THem, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn_Sua, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btn_Xoa, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
@@ -1976,7 +2005,8 @@ public class frmQL extends javax.swing.JFrame {
                                 .addGap(44, 44, 44)
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel18)
-                                    .addComponent(chon_file, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(chon_file, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtDuong_Dan, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
@@ -2012,9 +2042,9 @@ public class frmQL extends javax.swing.JFrame {
                         .addGap(37, 37, 37)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btn_Xoa, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_Sua, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_THem, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26))
         );
 
@@ -2482,7 +2512,7 @@ public class frmQL extends javax.swing.JFrame {
             .addGroup(pnl_tinhtienCharNgayLayout.createSequentialGroup()
                 .addGap(54, 54, 54)
                 .addComponent(lblThanhTien1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 171, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 173, Short.MAX_VALUE)
                 .addGroup(pnl_tinhtienCharNgayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tbl_addHoadDon3, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_tinhtienCharNgayLayout.createSequentialGroup()
@@ -3468,25 +3498,26 @@ public class frmQL extends javax.swing.JFrame {
     }//GEN-LAST:event_tbl_tableNhanVien_QlMouseClicked
 
     private void chon_fileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chon_fileActionPerformed
-//        JFileChooser fileChooser = new JFileChooser("image");
-//        FileFilter filter = new FileNameExtensionFilter("Image file", "gjf", "jpg", "png");
-//
-//        fileChooser.setFileFilter(filter);
-//        fileChooser.setMultiSelectionEnabled(false);
-//
-//        int action = fileChooser.showOpenDialog(this);
-//        if (action == JFileChooser.APPROVE_OPTION) {
-//            while (true) {
-//                if (!fileChooser.getSelectedFile().getName().matches("([^\\s]+(\\.(?i)(jpg|png|gif|bmp))$)")) {
-//                    JOptionPane.showMessageDialog(null, "Định dạng file hình đuôi phải là GIF, JPG, PNG !");
-//                    return;
-//                } else {
-//                    break;
-//                }
-//            }
-//            String imgFile = fileChooser.getSelectedFile().getName();
-//            txtDuongDan.setText(imgFile);
-//            img.setImageLabel(lblHinhAnh, "image//" + imgFile);
+        JFileChooser fileChooser = new JFileChooser("image");
+        FileFilter filter = new FileNameExtensionFilter("Image file", "gjf", "jpg", "png");
+
+        fileChooser.setFileFilter(filter);
+        fileChooser.setMultiSelectionEnabled(false);
+
+        int action = fileChooser.showOpenDialog(this);
+        if (action == JFileChooser.APPROVE_OPTION) {
+            while (true) {
+                if (!fileChooser.getSelectedFile().getName().matches("([^\\s]+(\\.(?i)(jpg|png|gif|bmp))$)")) {
+                    JOptionPane.showMessageDialog(null, "Định dạng file hình đuôi phải là GIF, JPG, PNG !");
+                    return;
+                } else {
+                    break;
+                }
+            }
+            String imgFile = fileChooser.getSelectedFile().getName();
+            txtDuongDan.setText(imgFile);
+            img.setImageLabel(lblHinhAnh, "image//" + imgFile);
+        }
     }//GEN-LAST:event_chon_fileActionPerformed
 
     private void tbl_tableNhanVien_Ql3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_tableNhanVien_Ql3MouseEntered
@@ -3497,6 +3528,7 @@ public class frmQL extends javax.swing.JFrame {
         if (evt.getClickCount() >= 1) {
             int dongDuocChon = tbl_tableNhanVien_Ql3.getSelectedRow();
             String MaMathang = tbl_tableNhanVien_Ql3.getValueAt(dongDuocChon, 0).toString();
+            String images =  tbl_tableNhanVien_Ql3.getValueAt(dongDuocChon, 8).toString();
             MatHang mh = bll_MatHang.LoadTheoMa(MaMathang);
             txtMaMH.setText(mh.getMaMatHang() + "");
             txtTenMH.setText(mh.getTenMatHang());
@@ -3506,6 +3538,7 @@ public class frmQL extends javax.swing.JFrame {
             spGiaBan.setValue(mh.getGiaBan());
             txtBH.setText(mh.getBaoHanh());
             txtMoTa.setText(mh.getMoTa());
+            img.setImageLabel(lblHinhAnh, "image//" + images);
 
         }
     }//GEN-LAST:event_tbl_tableNhanVien_Ql3MouseClicked
@@ -3639,8 +3672,12 @@ public class frmQL extends javax.swing.JFrame {
         ResultSet rs = dalChucVu.LayChucVu();
         bllNhanVien.LoadNhanVien(tblNhanVien);
         bllMyComboBox.LoadCBB(cboChucVu, rs, true);
+        //HÌnh nhân viên
         img.setImageLabel(lblAnh, "image//default.png");
         txtDuongDan.setText("default.png");
+        //Hình xe
+        img.setImageLabel(lblHinhAnh, "image//Moto.png");
+        txtDuong_Dan.setText("Moto.png");
     }//GEN-LAST:event_formWindowOpened
 
     private void txtNSXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNSXActionPerformed
@@ -3772,6 +3809,65 @@ public class frmQL extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTenNhanVienActionPerformed
 
+    private void txtDuong_DanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDuong_DanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDuong_DanActionPerformed
+
+    private void btn_THemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_THemMouseClicked
+        int MaMatHang = Integer.parseInt(txtMaMH.getText().toString());
+        String TenMatHang = txtTenMH.getText();
+        int SoLuong = Integer.valueOf(spSL.getValue().toString());
+        String NhaSanXuat = txtNSX.getText();
+        double GiaNhap = Double.valueOf(spGiaNhap.getValue().toString());
+        double GiaBan = Double.valueOf(spGiaBan.getValue().toString());
+        String BaoHanh = txtBH.getText();
+        String MoTa = txtMoTa.getText();
+        String HinhAnh = txtDuong_Dan.getText();
+        MatHang mh = new MatHang(MaMatHang, TenMatHang, SoLuong, NhaSanXuat, GiaNhap, GiaBan, 
+                BaoHanh, MoTa, HinhAnh);
+        bll_MatHang.Them(mh);
+        bll_MatHang.LoadAll(tbl_tableNhanVien_Ql3);
+    }//GEN-LAST:event_btn_THemMouseClicked
+
+    private void btn_SuaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_SuaMouseClicked
+        int Rows[] = tbl_tableNhanVien_Ql3.getSelectedRows();
+        if (Rows.length <= 0) {
+            JOptionPane.showMessageDialog(this, "Bạn chưa chọn dòng cần sửa!");
+            return;
+        }
+        
+        int MaMatHang = Integer.parseInt(txtMaMH.getText().toString());
+        String TenMatHang = txtTenMH.getText();
+        int SoLuong = Integer.valueOf(spSL.getValue().toString());
+        String NhaSanXuat = txtNSX.getText();
+        double GiaNhap = Double.valueOf(spGiaNhap.getValue().toString());
+        double GiaBan = Double.valueOf(spGiaBan.getValue().toString());
+        String BaoHanh = txtBH.getText();
+        String MoTa = txtMoTa.getText();
+        String HinhAnh = txtDuong_Dan.getText();
+        MatHang mh = new MatHang(MaMatHang, TenMatHang, SoLuong, NhaSanXuat, GiaNhap, GiaBan, 
+                BaoHanh, MoTa, HinhAnh);
+        bll_MatHang.Sua(mh);
+        bll_MatHang.LoadAll(tbl_tableNhanVien_Ql3);
+        txtMaMH.setVisible(false);
+    }//GEN-LAST:event_btn_SuaMouseClicked
+
+    private void btn_XoaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_XoaMouseClicked
+        int Rows[] = tbl_tableNhanVien_Ql3.getSelectedRows();
+        if (Rows.length <= 0) {
+            JOptionPane.showMessageDialog(this, "Bạn chưa chọn dòng cần xóa!");
+            return;
+        }
+        List<String> lstMaSP = new ArrayList();
+        int CacViTri[] = tbl_tableNhanVien_Ql3.getSelectedRows();
+        for (int i : CacViTri) {
+            lstMaSP.add(tbl_tableNhanVien_Ql3.getValueAt(i, 0).toString());
+        }
+        bll_MatHang.Xoa(lstMaSP);
+        bll_MatHang.LoadAll(tbl_tableNhanVien_Ql3);
+        
+    }//GEN-LAST:event_btn_XoaMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -3793,7 +3889,10 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JPanel btn_KhachHang_Menu;
     private javax.swing.JPanel btn_NhanVien_Menu;
     private javax.swing.JPanel btn_NhapXuat_Menu;
+    private javax.swing.JLabel btn_Sua;
+    private javax.swing.JLabel btn_THem;
     private javax.swing.JPanel btn_ThongKe_Menu;
+    private javax.swing.JLabel btn_Xoa;
     private javax.swing.JPanel btn_home_menu;
     private java.awt.Button btn_oke;
     private javax.swing.JPanel btn_xemay_menu;
@@ -3817,12 +3916,9 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
@@ -4051,6 +4147,7 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JTextField txtCMND;
     private javax.swing.JTextArea txtDiaChi;
     private javax.swing.JTextField txtDuongDan;
+    private javax.swing.JButton txtDuong_Dan;
     private javax.swing.JTextField txtMaMH;
     private javax.swing.JTextField txtMoTa;
     private javax.swing.JTextField txtNSX;
