@@ -52,7 +52,7 @@ public class frm_Loading extends javax.swing.JFrame {
         lbl_backgroung_loadding.setFont(new java.awt.Font("UTM Cookies", 0, 36)); // NOI18N
         lbl_backgroung_loadding.setForeground(new java.awt.Color(255, 255, 255));
         lbl_backgroung_loadding.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_backgroung_loadding.setIcon(new javax.swing.ImageIcon("C:\\Users\\TRINH THE NAM\\Desktop\\JW-Còoeee\\JIRA\\JIRA\\src\\icon\\LoadddingTome.gif")); // NOI18N
+        lbl_backgroung_loadding.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/LoadddingTome.gif"))); // NOI18N
         lbl_backgroung_loadding.setFocusCycleRoot(true);
         getContentPane().add(lbl_backgroung_loadding);
         lbl_backgroung_loadding.setBounds(0, 0, 800, 600);

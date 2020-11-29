@@ -65,7 +65,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\TRINH THE NAM\Desktop\JW-C&#xf2;oeee\JIRA\JIRA\src\icon\LoadddingTome.gif"/>
+          <Image iconType="3" name="/icon/LoadddingTome.gif"/>
         </Property>
         <Property name="focusCycleRoot" type="boolean" value="true"/>
       </Properties>
