@@ -6,7 +6,7 @@
 package jira;
 
 import DA1_Helper.Chuyen_Doi;
-import DA1_Helper.MyComBoBox;
+import DA1_Helper.myComboBox;
 import DA1_Helper.ThongBao;
 import DA1_bll.bllMyComboBox;
 import DA1_bll.bllNhanVien;
@@ -15,13 +15,8 @@ import DA1_dal.dalChucVu;
 import DA1_dto.MatHang;
 import DA1_dto.NhanVien;
 import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
 import java.sql.ResultSet;
-import javax.swing.ImageIcon;
-import java.time.chrono.JapaneseDate;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import javax.swing.BorderFactory;
@@ -3708,7 +3703,7 @@ public class frmQL extends javax.swing.JFrame {
     public void ChonChucVu(String TenLoai) {
         DefaultComboBoxModel cbbModel = (DefaultComboBoxModel) cboChucVu.getModel();
         for (int i = 0; i < cboChucVu.getItemCount(); i++) {
-            MyComBoBox myCBB = (MyComBoBox) cbbModel.getElementAt(i);
+            myComboBox myCBB = (myComboBox) cbbModel.getElementAt(i);
 
             if (myCBB.toString().equals(TenLoai)) {
                 cboChucVu.setSelectedIndex(i);
@@ -3729,7 +3724,7 @@ public class frmQL extends javax.swing.JFrame {
         boolean GioiTinh = rbgNam.isSelected();
         Date NgaySinh = Chuyen_Doi.LayNgayDate(txtNgaySinh.getText());
         int MaChucVu;
-        MyComBoBox myCBB = (MyComBoBox) cboChucVu.getSelectedItem();
+        myComboBox myCBB = (myComboBox) cboChucVu.getSelectedItem();
         MaChucVu = myCBB.MaInt();
         String CMND = txtCMND.getText();
         String SoDienThoai = txtSoDienThoai.getText();
@@ -3747,7 +3742,7 @@ public class frmQL extends javax.swing.JFrame {
         boolean GioiTinh = rbgNam.isSelected();
         Date NgaySinh = Chuyen_Doi.LayNgayDate(txtNgaySinh.getText());
         int MaChucVu;
-        MyComBoBox myCBB = (MyComBoBox) cboChucVu.getSelectedItem();
+        myComboBox myCBB = (myComboBox) cboChucVu.getSelectedItem();
         MaChucVu = myCBB.MaInt();
         String CMND = txtCMND.getText();
         String SoDienThoai = txtSoDienThoai.getText();
