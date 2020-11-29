@@ -55,18 +55,18 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btn_HoaDon_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
-                      <Component id="btn_xemay_menu" alignment="0" pref="230" max="32767" attributes="0"/>
-                      <Component id="btn_NhanVien_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
-                      <Component id="btn_NhapXuat_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
-                      <Component id="btn_BaoHanh_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
-                      <Component id="btn_ThongKe_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
-                      <Component id="btn_KhachHang_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
-                      <Component id="btn_home_menu" alignment="0" max="32767" attributes="0"/>
-                  </Group>
+              <Component id="btn_HoaDon_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
+              <Component id="btn_xemay_menu" alignment="0" pref="230" max="32767" attributes="0"/>
+              <Component id="btn_NhanVien_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
+              <Component id="btn_NhapXuat_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
+              <Component id="btn_BaoHanh_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
+              <Component id="btn_ThongKe_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
+              <Component id="btn_KhachHang_Menu" alignment="0" pref="230" max="32767" attributes="0"/>
+              <Component id="btn_home_menu" alignment="0" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btn_NhaCungCap_Menu" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -88,7 +88,9 @@
                   <Component id="btn_BaoHanh_Menu" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="btn_ThongKe_Menu" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="375" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btn_NhaCungCap_Menu" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="331" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -571,6 +573,56 @@
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
               </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="btn_NhaCungCap_Menu">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="23" green="23" red="23" type="rgb"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[131, 47]"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_NhaCungCap_MenuMouseClicked"/>
+            <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_NhaCungCap_MenuMouseEntered"/>
+            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_NhaCungCap_MenuMouseExited"/>
+          </Events>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+            <Property name="useNullLayout" type="boolean" value="false"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lbl_home8">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="12" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Nh&#xe0; Cung C&#x1ea5;p"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="80" y="0" width="88" height="36"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbl_iconmain8">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/icon/icons8_treehouse_25px.png"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="10" y="0" width="51" height="47"/>
+                </Constraint>
+              </Constraints>
             </Component>
           </SubComponents>
         </Container>

@@ -77,6 +77,9 @@ public class frmQL extends javax.swing.JFrame {
         btn_ThongKe_Menu = new javax.swing.JPanel();
         lbl_home7 = new javax.swing.JLabel();
         lbl_iconmain7 = new javax.swing.JLabel();
+        btn_NhaCungCap_Menu = new javax.swing.JPanel();
+        lbl_home8 = new javax.swing.JLabel();
+        lbl_iconmain8 = new javax.swing.JLabel();
         pnl_exit = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         lbl_out = new javax.swing.JLabel();
@@ -503,7 +506,7 @@ public class frmQL extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(btn_NhanVien_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(btn_NhanVien_MenuLayout.createSequentialGroup()
-                        .addComponent(lbl_home3, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
+                        .addComponent(lbl_home3, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
                         .addContainerGap())
                     .addComponent(lbl_iconmain3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
@@ -545,7 +548,7 @@ public class frmQL extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(btn_KhachHang_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lbl_iconmain4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lbl_home4, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE))
+                    .addComponent(lbl_home4, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -585,7 +588,7 @@ public class frmQL extends javax.swing.JFrame {
             .addGroup(btn_NhapXuat_MenuLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(btn_NhapXuat_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(lbl_home5, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
+                    .addComponent(lbl_home5, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
                     .addComponent(lbl_iconmain5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -627,7 +630,7 @@ public class frmQL extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addGroup(btn_BaoHanh_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(btn_BaoHanh_MenuLayout.createSequentialGroup()
-                        .addComponent(lbl_home6, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                        .addComponent(lbl_home6, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
                         .addContainerGap())
                     .addComponent(lbl_iconmain6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
@@ -669,26 +672,51 @@ public class frmQL extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addGroup(btn_ThongKe_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(btn_ThongKe_MenuLayout.createSequentialGroup()
-                        .addComponent(lbl_home7, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                        .addComponent(lbl_home7, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
                         .addContainerGap())
                     .addComponent(lbl_iconmain7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
+
+        btn_NhaCungCap_Menu.setBackground(new java.awt.Color(35, 35, 35));
+        btn_NhaCungCap_Menu.setPreferredSize(new java.awt.Dimension(131, 47));
+        btn_NhaCungCap_Menu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_NhaCungCap_MenuMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btn_NhaCungCap_MenuMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btn_NhaCungCap_MenuMouseExited(evt);
+            }
+        });
+        btn_NhaCungCap_Menu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lbl_home8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lbl_home8.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_home8.setText("Nhà Cung Cấp");
+        btn_NhaCungCap_Menu.add(lbl_home8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 88, 36));
+
+        lbl_iconmain8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_iconmain8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8_treehouse_25px.png"))); // NOI18N
+        btn_NhaCungCap_Menu.add(lbl_iconmain8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 51, 47));
 
         javax.swing.GroupLayout pnl_menuLayout = new javax.swing.GroupLayout(pnl_menu);
         pnl_menu.setLayout(pnl_menuLayout);
         pnl_menuLayout.setHorizontalGroup(
             pnl_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_menuLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addGroup(pnl_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn_HoaDon_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                    .addComponent(btn_xemay_menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                    .addComponent(btn_NhanVien_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                    .addComponent(btn_NhapXuat_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                    .addComponent(btn_BaoHanh_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                    .addComponent(btn_ThongKe_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                    .addComponent(btn_KhachHang_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                    .addComponent(btn_home_menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+            .addComponent(btn_HoaDon_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+            .addComponent(btn_xemay_menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+            .addComponent(btn_NhanVien_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+            .addComponent(btn_NhapXuat_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+            .addComponent(btn_BaoHanh_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+            .addComponent(btn_ThongKe_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+            .addComponent(btn_KhachHang_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+            .addComponent(btn_home_menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_menuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btn_NhaCungCap_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         pnl_menuLayout.setVerticalGroup(
             pnl_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -708,7 +736,9 @@ public class frmQL extends javax.swing.JFrame {
                 .addComponent(btn_BaoHanh_Menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btn_ThongKe_Menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 375, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_NhaCungCap_Menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 331, Short.MAX_VALUE))
         );
 
         getContentPane().add(pnl_menu);
@@ -2507,7 +2537,7 @@ public class frmQL extends javax.swing.JFrame {
             .addGroup(pnl_tinhtienCharNgayLayout.createSequentialGroup()
                 .addGap(54, 54, 54)
                 .addComponent(lblThanhTien1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 173, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 171, Short.MAX_VALUE)
                 .addGroup(pnl_tinhtienCharNgayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tbl_addHoadDon3, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_tinhtienCharNgayLayout.createSequentialGroup()
@@ -3863,6 +3893,26 @@ public class frmQL extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btn_XoaMouseClicked
 
+    private void btn_NhaCungCap_MenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NhaCungCap_MenuMouseClicked
+        // TODO add your handling code here:
+        pnl_home_carlayoout.removeAll();
+        pnl_home_carlayoout.repaint();
+        pnl_home_carlayoout.revalidate();
+
+        pnl_home_carlayoout.add(pnlNhaCungCap); // Đổ table
+        pnl_home_carlayoout.repaint();
+        pnl_home_carlayoout.revalidate();
+
+    }//GEN-LAST:event_btn_NhaCungCap_MenuMouseClicked
+
+    private void btn_NhaCungCap_MenuMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NhaCungCap_MenuMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_NhaCungCap_MenuMouseEntered
+
+    private void btn_NhaCungCap_MenuMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NhaCungCap_MenuMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_NhaCungCap_MenuMouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -3882,6 +3932,7 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JPanel btn_BaoHanh_Menu;
     private javax.swing.JPanel btn_HoaDon_Menu;
     private javax.swing.JPanel btn_KhachHang_Menu;
+    private javax.swing.JPanel btn_NhaCungCap_Menu;
     private javax.swing.JPanel btn_NhanVien_Menu;
     private javax.swing.JPanel btn_NhapXuat_Menu;
     private javax.swing.JLabel btn_Sua;
@@ -4054,6 +4105,7 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_home5;
     private javax.swing.JLabel lbl_home6;
     private javax.swing.JLabel lbl_home7;
+    private javax.swing.JLabel lbl_home8;
     private javax.swing.JLabel lbl_iconmain;
     private javax.swing.JLabel lbl_iconmain1;
     private javax.swing.JLabel lbl_iconmain2;
@@ -4062,6 +4114,7 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_iconmain5;
     private javax.swing.JLabel lbl_iconmain6;
     private javax.swing.JLabel lbl_iconmain7;
+    private javax.swing.JLabel lbl_iconmain8;
     private javax.swing.JLabel lbl_out;
     private javax.swing.JLabel lblsanphamban;
     private javax.swing.JLabel lblsohoadon;
