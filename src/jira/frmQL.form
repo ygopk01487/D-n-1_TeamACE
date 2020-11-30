@@ -4789,11 +4789,11 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                      <Component id="jLabel96" min="-2" pref="86" max="-2" attributes="0"/>
+                      <Component id="lblAdd" min="-2" pref="86" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel97" min="-2" pref="86" max="-2" attributes="0"/>
+                      <Component id="lblUpdata" min="-2" pref="86" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel98" min="-2" pref="86" max="-2" attributes="0"/>
+                      <Component id="lblDelete" min="-2" pref="86" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -4836,9 +4836,9 @@
                       </Group>
                       <EmptySpace pref="120" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel98" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                          <Component id="jLabel97" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                          <Component id="jLabel96" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="lblDelete" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="lblUpdata" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="lblAdd" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
                   </Group>
@@ -4903,11 +4903,11 @@
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                       <Table columnCount="6" rowCount="1">
                         <Column editable="false" title="STT" type="java.lang.Object"/>
-                        <Column editable="false" title="M&#xe3; Xe" type="java.lang.Object"/>
-                        <Column editable="false" title="T&#xea;n Xe" type="java.lang.Object"/>
-                        <Column editable="false" title="Lo&#x1ea1;i Xe" type="java.lang.Object"/>
-                        <Column editable="false" title="Gi&#xe1; Nh&#x1ead;p" type="java.lang.Object"/>
-                        <Column editable="true" title="Gi&#xe1; B&#xe1;n" type="java.lang.Object"/>
+                        <Column editable="false" title="M&#xe3; nh&#xe0; cung c&#x1ea5;p" type="java.lang.Object"/>
+                        <Column editable="false" title="T&#xea;n nh&#xe0; cung c&#x1ea5;p" type="java.lang.Object"/>
+                        <Column editable="false" title="S&#x1ed1; &#x111;i&#x1ec7;n tho&#x1ea1;i" type="java.lang.Object"/>
+                        <Column editable="false" title="&#x110;&#x1ecb;a ch&#x1ec9;" type="java.lang.Object"/>
+                        <Column editable="false" title="Email" type="java.lang.Object"/>
                       </Table>
                     </Property>
                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -5018,10 +5018,13 @@
             <Component class="javax.swing.JTextField" name="maBH4">
             </Component>
             <Component class="javax.swing.JTextField" name="maBH5">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="maBH5ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="maBH6">
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel96">
+            <Component class="javax.swing.JLabel" name="lblAdd">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ed" green="ed" red="ed" type="rgb"/>
@@ -5037,8 +5040,11 @@
                   </Border>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblAddMouseClicked"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel97">
+            <Component class="javax.swing.JLabel" name="lblUpdata">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ed" green="ed" red="ed" type="rgb"/>
@@ -5054,8 +5060,11 @@
                   </Border>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblUpdataMouseClicked"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel98">
+            <Component class="javax.swing.JLabel" name="lblDelete">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ed" green="ed" red="ed" type="rgb"/>
@@ -5071,6 +5080,9 @@
                   </Border>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblDeleteMouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

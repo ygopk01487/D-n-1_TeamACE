@@ -9,10 +9,12 @@ import DA1_Helper.Chuyen_Doi;
 import DA1_Helper.myComboBox;
 import DA1_Helper.ThongBao;
 import DA1_bll.bllMyComboBox;
+import DA1_bll.bllNhaCungCap;
 import DA1_bll.bllNhanVien;
 import DA1_bll.bll_MatHang;
 import DA1_dal.dalChucVu;
 import DA1_dto.MatHang;
+import DA1_dto.NhaCungCap;
 import DA1_dto.NhanVien;
 import java.awt.Color;
 import java.sql.ResultSet;
@@ -40,7 +42,7 @@ public class frmQL extends javax.swing.JFrame {
      */
     public frmQL() {
         initComponents();
-
+        bllNhaCungCap.LoadNhaCungCap(tbl_tableNhanVien_Ql8);
     }
 
     /**
@@ -300,9 +302,9 @@ public class frmQL extends javax.swing.JFrame {
         maBH4 = new javax.swing.JTextField();
         maBH5 = new javax.swing.JTextField();
         maBH6 = new javax.swing.JTextField();
-        jLabel96 = new javax.swing.JLabel();
-        jLabel97 = new javax.swing.JLabel();
-        jLabel98 = new javax.swing.JLabel();
+        lblAdd = new javax.swing.JLabel();
+        lblUpdata = new javax.swing.JLabel();
+        lblDelete = new javax.swing.JLabel();
         pnl_nhanvien = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tblNhanVien = new javax.swing.JTable();
@@ -2836,11 +2838,11 @@ public class frmQL extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "STT", "Mã Xe", "Tên Xe", "Loại Xe", "Giá Nhập", "Giá Bán"
+                "STT", "Mã nhà cung cấp", "Tên nhà cung cấp", "Số điện thoại", "Địa chỉ", "Email"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, true
+                false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -2885,20 +2887,41 @@ public class frmQL extends javax.swing.JFrame {
             }
         });
 
-        jLabel96.setBackground(new java.awt.Color(237, 237, 237));
-        jLabel96.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel96.setText("Thêm ");
-        jLabel96.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        maBH5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                maBH5ActionPerformed(evt);
+            }
+        });
 
-        jLabel97.setBackground(new java.awt.Color(237, 237, 237));
-        jLabel97.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel97.setText("Sửa");
-        jLabel97.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        lblAdd.setBackground(new java.awt.Color(237, 237, 237));
+        lblAdd.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAdd.setText("Thêm ");
+        lblAdd.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        lblAdd.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAddMouseClicked(evt);
+            }
+        });
 
-        jLabel98.setBackground(new java.awt.Color(237, 237, 237));
-        jLabel98.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel98.setText("Xóa");
-        jLabel98.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        lblUpdata.setBackground(new java.awt.Color(237, 237, 237));
+        lblUpdata.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblUpdata.setText("Sửa");
+        lblUpdata.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        lblUpdata.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblUpdataMouseClicked(evt);
+            }
+        });
+
+        lblDelete.setBackground(new java.awt.Color(237, 237, 237));
+        lblDelete.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblDelete.setText("Xóa");
+        lblDelete.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.white));
+        lblDelete.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblDeleteMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlNhaCungCapLayout = new javax.swing.GroupLayout(pnlNhaCungCap);
         pnlNhaCungCap.setLayout(pnlNhaCungCapLayout);
@@ -2933,11 +2956,11 @@ public class frmQL extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(pnlNhaCungCapLayout.createSequentialGroup()
                 .addGap(65, 65, 65)
-                .addComponent(jLabel96, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel97, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblUpdata, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel98, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlNhaCungCapLayout.setVerticalGroup(
@@ -2970,9 +2993,9 @@ public class frmQL extends javax.swing.JFrame {
                     .addComponent(jLabel93, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
                 .addGroup(pnlNhaCungCapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel98, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel97, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel96, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUpdata, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(98, 98, 98))
         );
 
@@ -3553,7 +3576,7 @@ public class frmQL extends javax.swing.JFrame {
         if (evt.getClickCount() >= 1) {
             int dongDuocChon = tbl_tableNhanVien_Ql3.getSelectedRow();
             String MaMathang = tbl_tableNhanVien_Ql3.getValueAt(dongDuocChon, 0).toString();
-            String images =  tbl_tableNhanVien_Ql3.getValueAt(dongDuocChon, 8).toString();
+            String images = tbl_tableNhanVien_Ql3.getValueAt(dongDuocChon, 8).toString();
             MatHang mh = bll_MatHang.LoadTheoMa(MaMathang);
             txtMaMH.setText(mh.getMaMatHang() + "");
             txtTenMH.setText(mh.getTenMatHang());
@@ -3654,6 +3677,20 @@ public class frmQL extends javax.swing.JFrame {
 
     private void tbl_tableNhanVien_Ql8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_tableNhanVien_Ql8MouseClicked
         // TODO add your handling code here:
+        int donguocChon = tbl_tableNhanVien_Ql8.getSelectedRow();
+
+        int MaNhaCungCap = Integer.parseInt(tbl_tableNhanVien_Ql8.getValueAt(donguocChon, 1).toString());
+
+        NhaCungCap hv = bllNhaCungCap.LayNCCtheoMa(MaNhaCungCap);
+
+        maBH3.setText(hv.getMaNhaCungCap() + "");
+        maBH2.setText(hv.getTenNhaCungCap());
+        maBH6.setText(hv.getDiaChi());
+        maBH4.setText(hv.getSoDienThoai());
+        maBH5.setText(hv.getEmail());
+
+//             Chuyển tav về tab đầu tiên
+
     }//GEN-LAST:event_tbl_tableNhanVien_Ql8MouseClicked
 
     private void tbl_tableNhanVien_Ql8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_tableNhanVien_Ql8MouseEntered
@@ -3848,7 +3885,7 @@ public class frmQL extends javax.swing.JFrame {
         String BaoHanh = txtBH.getText();
         String MoTa = txtMoTa.getText();
         String HinhAnh = txtDuong_Dan.getText();
-        MatHang mh = new MatHang(MaMatHang, TenMatHang, SoLuong, NhaSanXuat, GiaNhap, GiaBan, 
+        MatHang mh = new MatHang(MaMatHang, TenMatHang, SoLuong, NhaSanXuat, GiaNhap, GiaBan,
                 BaoHanh, MoTa, HinhAnh);
         bll_MatHang.Them(mh);
         bll_MatHang.LoadAll(tbl_tableNhanVien_Ql3);
@@ -3860,7 +3897,7 @@ public class frmQL extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Bạn chưa chọn dòng cần sửa!");
             return;
         }
-        
+
         int MaMatHang = Integer.parseInt(txtMaMH.getText().toString());
         String TenMatHang = txtTenMH.getText();
         int SoLuong = Integer.valueOf(spSL.getValue().toString());
@@ -3870,7 +3907,7 @@ public class frmQL extends javax.swing.JFrame {
         String BaoHanh = txtBH.getText();
         String MoTa = txtMoTa.getText();
         String HinhAnh = txtDuong_Dan.getText();
-        MatHang mh = new MatHang(MaMatHang, TenMatHang, SoLuong, NhaSanXuat, GiaNhap, GiaBan, 
+        MatHang mh = new MatHang(MaMatHang, TenMatHang, SoLuong, NhaSanXuat, GiaNhap, GiaBan,
                 BaoHanh, MoTa, HinhAnh);
         bll_MatHang.Sua(mh);
         bll_MatHang.LoadAll(tbl_tableNhanVien_Ql3);
@@ -3890,7 +3927,7 @@ public class frmQL extends javax.swing.JFrame {
         }
         bll_MatHang.Xoa(lstMaSP);
         bll_MatHang.LoadAll(tbl_tableNhanVien_Ql3);
-        
+
     }//GEN-LAST:event_btn_XoaMouseClicked
 
     private void btn_NhaCungCap_MenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NhaCungCap_MenuMouseClicked
@@ -3912,6 +3949,60 @@ public class frmQL extends javax.swing.JFrame {
     private void btn_NhaCungCap_MenuMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NhaCungCap_MenuMouseExited
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_NhaCungCap_MenuMouseExited
+
+    private void maBH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maBH5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_maBH5ActionPerformed
+
+    private void lblAddMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddMouseClicked
+        // TODO add your handling code here:
+        try {
+            String TenNhaCungCap = maBH2.getText();
+            String SoDienThoai = maBH4.getText();
+            String DiaChi = maBH6.getText();
+            String Email = maBH5.getText();
+
+            NhaCungCap hv = new NhaCungCap(TenNhaCungCap, SoDienThoai, DiaChi, Email);
+
+            bllNhaCungCap.ThemNhaCungCap(hv);
+            bllNhaCungCap.LoadNhaCungCap(tbl_tableNhanVien_Ql8);
+        } catch (Exception e) {
+            ThongBao.ThpngBaoDonGian("Báo Lỗi", "Không thể thực hiện thêm !!");
+        }
+    }//GEN-LAST:event_lblAddMouseClicked
+
+    private void lblDeleteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDeleteMouseClicked
+        // TODO add your handling code here:
+        int DSViTri[] = tbl_tableNhanVien_Ql8.getSelectedRows();
+        List<String> IstMaHV = new ArrayList<>();
+        for (int i : DSViTri) {
+            String MaHV = tbl_tableNhanVien_Ql8.getValueAt(i, 1).toString();
+            IstMaHV.add(MaHV);
+        }
+        bllNhaCungCap.Xoa(IstMaHV);
+        bllNhaCungCap.LoadNhaCungCap(tbl_tableNhanVien_Ql8);
+    }//GEN-LAST:event_lblDeleteMouseClicked
+
+    private void lblUpdataMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblUpdataMouseClicked
+        // TODO add your handling code here:
+
+        try {
+            int MaNhaCungCap = Integer.parseInt(maBH3.getText());
+            String TenNhaCungCap = maBH2.getText();
+            String SoDienThoai = maBH4.getText();
+            String DiaChi = maBH6.getText();
+            String Email = maBH5.getText();
+
+            NhaCungCap hv = new NhaCungCap(MaNhaCungCap, TenNhaCungCap, SoDienThoai, DiaChi, Email);
+
+            bllNhaCungCap.Sua(hv);
+            bllNhaCungCap.LoadNhaCungCap(tbl_tableNhanVien_Ql8);
+        } catch (Exception e) {
+            ThongBao.ThpngBaoDonGian("Thông Báo", "Báo Lỗi");
+        }
+
+
+    }//GEN-LAST:event_lblUpdataMouseClicked
 
     /**
      * @param args the command line arguments
@@ -4035,9 +4126,6 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
     private javax.swing.JLabel jLabel95;
-    private javax.swing.JLabel jLabel96;
-    private javax.swing.JLabel jLabel97;
-    private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel12;
@@ -4080,8 +4168,10 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JLabel jlable5;
     private javax.swing.JLabel jlable6;
     private javax.swing.JLabel jlable7;
+    private javax.swing.JLabel lblAdd;
     private javax.swing.JLabel lblAnh;
     private javax.swing.JLabel lblBaoHanh;
+    private javax.swing.JLabel lblDelete;
     private javax.swing.JLabel lblGiaBan;
     private javax.swing.JLabel lblGiaNhap;
     private javax.swing.JLabel lblHinhAnh;
@@ -4094,6 +4184,7 @@ public class frmQL extends javax.swing.JFrame {
     private javax.swing.JLabel lblThanhTien;
     private javax.swing.JLabel lblThanhTien1;
     private javax.swing.JLabel lblTongTienHDTheoNgay;
+    private javax.swing.JLabel lblUpdata;
     private javax.swing.JLabel lbl_H5;
     private javax.swing.JLabel lbl_Người;
     private javax.swing.JLabel lbl_Title4;
